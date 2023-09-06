@@ -1,0 +1,27 @@
+.background-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../public/images/b`ackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 900px;
+  width: 100%;
+}
+.box {
+  display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center; /* Vertically center content */
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  padding: 20px;
+  background-color: #b97e32;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 auto; /* Center the box horizontally on the page */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .box {
+    max-width: 300px; /* Adjust for smaller screens */
+  }
+}
