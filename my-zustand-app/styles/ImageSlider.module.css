@@ -1,0 +1,35 @@
+.sliderContainer {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  max-width: 70%;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+}
+
+.slide {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.sliderNav {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.sliderPoint {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.sliderPoint.active {
+  background-color: #007bff;
+}

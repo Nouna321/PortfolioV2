@@ -1,3 +1,6 @@
+"use client";
+
+import React from "react";
 import Boxe from "@/Components/BoxSocialNetwork";
 import DownloadButton from "@/Components/DownloadButton";
 import Layout from "@/Components/Layout";
@@ -6,6 +9,11 @@ import Background from "../Components/ImageBackground";
 import "../styles/globals.css";
 import PieChart from "../Components/PieChart";
 import { FaFaceSmileBeam, FaFaceGrinHearts } from "react-icons/fa6";
+import { PiSmileyXEyesFill } from "react-icons/pi";
+import { motion } from "framer-motion";
+import { Carousel } from "react-responsive-carousel";
+import ImageSlider from "@/Components/ImageSlider";
+
 export default function Home() {
   return (
     <Layout>
@@ -34,49 +42,70 @@ export default function Home() {
         </div>
         <div className="textAboutMe">Hey there! 👋. I'm Zouina, a Front End Engineer based in Algeria, who loves to code and build products with a delightful user experience. Currently working at Maystro Delivery as a Front End Web Developer Engineer, building beautiful websites and applications that customers use. I love working in between product, engineering, and developer experience. Some things that make me excited are JavaScript, frameworks such as React, Next, Jest..., CI & CD systems, simplicity, automating things, and building meaningful products. I was born and raised in Tizi Ouzou (Algeria) and come from a background of studying Computer Science. Outside of work, I'm obsessed with sports, doing and traveling with my family.</div>
       </section>
-      <section id="section3" style={{ padding: "100px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+      <section id="section3" style={{ padding: "100px", display: "flex", paddingTop: "0px", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
         <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", marginBottom: "50px" }}>
           <h1 className="TtilebottomPage">My Skills</h1>
           <FaFaceGrinHearts size={23} />
         </div>
         <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center", width: "100%" }}>
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-            <PieChart tech="JS" />
+            <motion.div animate={{ rotate: 360 }} transition={{ type: "spring", duration: 5, bounce: 0.6, repeat: Infinity }}>
+              <PieChart tech="JS" />
+            </motion.div>
             <span className="textAboutMe">JavaScprit</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-            <PieChart tech="TS" />
+            <motion.div animate={{ rotate: 360 }} transition={{ type: "spring", duration: 5, bounce: 0.6, repeat: Infinity }}>
+              <PieChart tech="TS" />
+            </motion.div>
             <span className="textAboutMe">TypeScript</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-            <PieChart tech="React" />
+            <motion.div animate={{ rotate: 360 }} transition={{ type: "spring", duration: 5, bounce: 0.6, repeat: Infinity }}>
+              <PieChart tech="React" />
+            </motion.div>
             <span className="textAboutMe">React JS</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-            <PieChart tech="Redux" />
+            <motion.div animate={{ rotate: 360 }} transition={{ type: "spring", duration: 5, bounce: 0.6, repeat: Infinity }}>
+              <PieChart tech="Redux" />
+            </motion.div>
+
             <span className="textAboutMe">Redux</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-            <PieChart tech="Next" />
+            <motion.div animate={{ rotate: 360 }} transition={{ type: "spring", duration: 5, bounce: 0.6, repeat: Infinity }}>
+              <PieChart tech="Next" />
+            </motion.div>
+
             <span className="textAboutMe">Next JS</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-            <PieChart tech="Node" />
+            <motion.div animate={{ rotate: 360 }} transition={{ type: "spring", duration: 5, bounce: 0.6, repeat: Infinity }}>
+              <PieChart tech="Node" />
+            </motion.div>
             <span className="textAboutMe">Node JS</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-            <PieChart tech="Tailwind" />
+            <motion.div animate={{ rotate: 360 }} transition={{ type: "spring", duration: 5, bounce: 0.6, repeat: Infinity }}>
+              <PieChart tech="Tailwind" />
+            </motion.div>
             <span className="textAboutMe">Tailwind CSS</span>
           </div>
           <div style={{ display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
-            <PieChart tech="MUI" />
+            <motion.div animate={{ rotate: 360 }} transition={{ type: "spring", duration: 5, bounce: 0.6, repeat: Infinity }}>
+              <PieChart tech="MUI" />
+            </motion.div>
             <span className="textAboutMe">Material UI</span>
           </div>
         </div>
       </section>
-      <section id="section4">
-        <h1>Section 3</h1>
-        {/* Add your content for Section 3 here */}
+      <section id="section4" style={{ padding: "100px", paddingTop: "0px", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center" }}>
+        <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center" }}>
+          <h1 className="TtilebottomPage">My Portfolio</h1>
+          <PiSmileyXEyesFill size={30} />
+        </div>
+        <ImageSlider />
       </section>
     </Layout>
   );

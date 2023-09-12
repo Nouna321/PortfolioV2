@@ -1,5 +1,6 @@
 import { LiaFacebook } from "react-icons/lia";
 import { TiSocialTwitterCircular, TiSocialLinkedinCircular, TiSocialInstagramCircular, TiSocialGithubCircular } from "react-icons/ti";
+import { MdEmail, MdLocalPhone } from "react-icons/md";
 import styles from "../styles/background.module.css";
 import RoundedImage from "./RoundedImage";
 
@@ -17,8 +18,16 @@ export default function Boxe() {
               <span>A</span>it <span>S</span>adoune
             </h1>
           </div>
-
           <h3 className={styles.frontendEngineer}>Front end Engineer Developer</h3>
+          <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: "20px" }}>
+            <MdEmail style={{ marginRight: "7px" }} size={23} color="white" />
+            <h3 className={styles.frontendEngineer}>E-mail : zaitsadoune@gmail.com</h3>
+          </div>
+
+          <div style={{ display: "flex", flexDirection: "row", justifyContent: "center", alignItems: "center", marginTop: "20px" }}>
+            <MdLocalPhone style={{ marginRight: "7px" }} size={23} color="white" />
+            <h3 className={styles.frontendEngineer}>Phone: +213698434961</h3>
+          </div>
         </div>
       </div>
       <div style={{ marginTop: "60px", display: "flex", flexDirection: "row" }}>
