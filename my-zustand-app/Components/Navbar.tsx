@@ -15,10 +15,10 @@ const Navbar: React.FC = () => {
           <a href="#section3">Skills</a>
         </li>
         <li className={styles.navbarItem}>
-          <a href="#section3">Portfolio</a>
+          <a href="#section4">Portfolio</a>
         </li>
         <li className={styles.navbarItem}>
-          <a href="#section3">Contact</a>
+          <a href="#section5">Contact</a>
         </li>
       </ul>
     </nav>

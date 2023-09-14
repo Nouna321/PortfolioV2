@@ -1,0 +1,22 @@
+.customButton {
+  background-color: #bd3100;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  width: 40%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customButton:hover {
+  background-color: #b67157;
+}
+.customButton svg {
+  margin-left: 10px;
+}

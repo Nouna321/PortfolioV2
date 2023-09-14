@@ -11,8 +11,8 @@ import PieChart from "../Components/PieChart";
 import { FaFaceSmileBeam, FaFaceGrinHearts } from "react-icons/fa6";
 import { PiSmileyXEyesFill } from "react-icons/pi";
 import { motion } from "framer-motion";
-import { Carousel } from "react-responsive-carousel";
 import ImageSlider from "@/Components/ImageSlider";
+import Footer from "@/Components/Footer";
 
 export default function Home() {
   return (
@@ -107,6 +107,7 @@ export default function Home() {
         </div>
         <ImageSlider />
       </section>
+      <Footer id="section5" />
     </Layout>
   );
 }

@@ -1,0 +1,16 @@
+.customInput {
+  width: auto;
+}
+
+.customInput input {
+  height: 100px;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #d59d54;
+  color: #fff;
+}
+
+.customInputFiled::placeholder {
+  color: #fff;
+}
