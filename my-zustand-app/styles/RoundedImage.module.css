@@ -1,6 +1,6 @@
 .roundedImage {
   border-radius: 50%;
-  border: 10px solid orange;
+  border: 10px solid #00877a;
   max-width: 100%;
   aspect-ratio: 1 / 1;
   width: 50%;

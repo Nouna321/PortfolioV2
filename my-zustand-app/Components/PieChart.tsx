@@ -2,7 +2,7 @@ import React from "react";
 import styles from "../styles/PieChart.module.css";
 
 interface PieChartProps {
-  tech: string;
+  tech: React.ReactNode;
 }
 
 const PieChart: React.FC<PieChartProps> = ({ tech }) => {
